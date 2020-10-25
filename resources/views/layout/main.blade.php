@@ -21,19 +21,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Profil</a>
+          <a class="nav-link" href="/profil">Profil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Jadwal Dokter</a>
+          <a class="nav-link" href="{{ url('/dokter') }}">Jadwal Dokter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pasien</a>
+          <a class="nav-link" href="{{ url('/ruangan') }}">Ruangan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ruangan</a>
+          <a class="nav-link" href="{{ url('/pasien') }}">Pasien</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/obat') }}">Obat</a>
         </li>
 
 
@@ -58,6 +61,17 @@
   </nav>
 
 @yield('container')
+
+<br>
+        <footer>
+          <div class="text-center py-2 mb-2 bg-dark text-white">
+              <div class="row">
+                <div class="col-12">
+                  <p>&copy; copyright 2020 | Sistem Informasi Manajemen | Kelompok 3 | Universitas Pamulang</p>
+                </div>
+              </div>
+          </div>
+        </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -16,3 +16,12 @@
 // });
 
 Route::get('/', 'PagesController@home');
+Route::get('/profil', 'PagesController@profil');
+
+Route::resource('/pasien', 'PasienController');
+
+Route::resource('/obat', 'ObatController');
+
+Route::resource('/ruangan', 'RuanganController');
+
+Route::resource('/dokter', 'DokterController');
